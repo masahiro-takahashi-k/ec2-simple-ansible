@@ -1,0 +1,6 @@
+#AWS環境を立ち上げるロール
+- name: create ec2
+  hosts: localhost
+  connection: local
+  roles:
+    - aws_vpc

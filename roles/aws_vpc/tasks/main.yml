@@ -1,0 +1,14 @@
+- name: EC2インスタンスの生成
+  amazon.aws.ec2_instance:
+    name: "{{ ec2_name }}"        # インスタンスの名前を指定
+    key_name: "{{ keypair_name }}"  # インスタンスにログインするための認証鍵を指定
+    instance_type: "{{ instance_type }}"         # インスタンスタイプを指定
+    image_id: "{{ image }}"
+    region: "{{ region }}"          # 東京リージョンを指定
+    vpc_subnet_id: "{{ subnet_id }}"   # サブネットを指定（ここは適宜変える）
+    security_group: "{{ secgrp_name }}"          # セキュリティグループ名を指定（ここは適宜変える）
+    network:
+      assign_public_ip: yes
+    state: started
+    wait: yes 
+  register: ec2_info

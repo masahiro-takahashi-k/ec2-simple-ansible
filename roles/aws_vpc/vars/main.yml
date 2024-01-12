@@ -1,0 +1,25 @@
+# vars file for aws
+
+#リージョン
+region: "ap-northeast-1"
+
+#サブネット
+subnet_id: "subnet-06518760981099975"
+
+#ec2キーペア名
+keypair_name: "demo-tokyo1"
+
+#セキュリティグループ名
+secgrp_name: "TEST-Stack-SecurityGroup-KI0262YRMDSL"
+
+#ec2名
+ec2_name: test-ec2
+
+#ec2インスタンスタイプ
+instance_type: t2.micro
+
+#ec2 イメージid AmazonLinux2 推奨
+image: ami-0506f0f56e3a057a4
+
+#ec2ユーザー名
+ec2_user_name: ec2-user

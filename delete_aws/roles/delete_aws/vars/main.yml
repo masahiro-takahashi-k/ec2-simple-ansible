@@ -1,0 +1,9 @@
+vpc_id: 
+IGW_id: 
+route_table_id: 
+subnet1_id: 
+subnet2_id: 
+SG_id: 
+ec2_key_pair_name: 
+ec2_key_pair_path: ~/.ssh/
+ec2_id: i-07153c30f57a74619
